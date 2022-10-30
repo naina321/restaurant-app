@@ -10,13 +10,16 @@ html {
   size: 20px;
   text-rendering: optimizeLegibility;
 }
-.row {
+/* .row {
   margin: 0;
   max-width: 1140px;
-}
+} */
 
 header {
-  background-image: linear-gradient(rgba(0, 0, 0, 0.7), rgba(0, 0, 0, 0.7)),
+  background-image: linear-gradient(
+      rgba(0, 0, 0, 0.8),
+      rgba(114, 107, 107, 0.3)
+    ),
     url("img/hero.jpg");
   background-size: cover;
   height: 100vh;
@@ -36,8 +39,8 @@ header {
   position: absolute;
   width: 1140px;
   top: 50%;
-  left: 50%;
-  transform: translate(-50%, -50%);
+  left: 10%;
+  /* transform: translate(-50%, -50%); */
 }
 .btn:link,
 .btn:visited {
@@ -95,4 +98,49 @@ header {
 .main-nav li a:hover,
 .main-nav li a:active {
   border-bottom: 2px solid #e67e22;
+}
+section {
+  padding: 80px 0px;
+}
+h2 {
+  font-weight: 300;
+  text-transform: uppercase;
+  font-size: 180%;
+  word-spacing: 2px;
+  text-align: center;
+  margin-bottom: 30px;
+  letter-spacing: 1px;
+}
+h2:after {
+  display: block;
+  height: 2px;
+  background-color: #e67e22;
+  content: "  ";
+  width: 100px;
+  margin: 0 auto;
+  margin-top: 15px;
+}
+.long-copy {
+  line-height: 145%;
+  width: 70%;
+  margin-left: 15%;
+}
+.box {
+  padding: 1%;
+}
+h3 {
+  font-weight: 300;
+  text-transform: uppercase;
+  font-size: 110%;
+  margin-bottom: 15px;
+}
+.box p {
+  font-size: 90%;
+  line-height: 145%;
+}
+.icon {
+  color: #e67e22;
+  font-size: 350%;
+  display: block;
+  margin-bottom: 10px;
 }
