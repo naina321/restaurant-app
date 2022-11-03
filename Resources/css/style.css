@@ -338,7 +338,6 @@ blockquote:before {
   width: 50%;
   margin: 0 auto;
 }
-,
 input[type="email"],
 select,
 textarea {
@@ -352,4 +351,63 @@ textarea {
 }
 input[type="checkbox"] {
   padding: 5%;
+}
+footer {
+  background-color: #333;
+  font-size: 80%;
+  padding: 50px;
+}
+.footer-nav {
+  list-style: none;
+  float: left;
+}
+.social-links {
+  list-style: none;
+  float: right;
+}
+.footer-nav li,
+.social-links li {
+  display: inline-block;
+  margin-right: 20px;
+}
+.footer-nav li,
+.social-links li {
+  display: inline-block;
+  margin-right: 20px;
+}
+.footer-nav li a:link,
+.footer-nav li a:visited,
+.social-links li ion-icon:link,
+.social-links li ion-icon:visited {
+  transform: scale(1.03);
+  text-decoration: none;
+  border: 0;
+  color: #888;
+}
+.footer-nav li a:hover,
+.footer-nav li a:active {
+  color: #ddd;
+}
+footer p {
+  color: #888;
+  text-align: center;
+  font-size: 90%;
+  margin-top: 20px;
+}
+.fb:hover {
+  color: #3b5998;
+  font-size: 160%;
+}
+.tw:hover {
+  color: #09a8ad;
+}
+.ggl:hover {
+  color: #f5f244;
+}
+.it:hover {
+  color: #f124d6;
+}
+.social-links li ion-icon:hover,
+.social-links li ion-icon:active {
+  transform: scale(2);
 }
