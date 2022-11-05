@@ -3,12 +3,15 @@
   padding: 0;
   box-sizing: border-box;
 }
-html {
+html,
+body {
+  scroll-behavior: smooth;
   color: #555;
   font-family: Roboto slab, sans-serif;
   font-weight: 300;
   size: 20px;
   text-rendering: optimizeLegibility;
+  overflow-x: hidden;
 }
 /* .row {
   margin: 0;
@@ -396,7 +399,6 @@ footer p {
 }
 .fb:hover {
   color: #3b5998;
-  font-size: 160%;
 }
 .tw:hover {
   color: #09a8ad;

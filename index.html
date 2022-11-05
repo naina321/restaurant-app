@@ -1,9 +1,12 @@
 <!DOCTYPE html>
 <html>
   <head>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>food project</title>
+      <link rel="stylesheet" href="https://unpkg.com/aos@next/dist/aos.css" />
     <link rel="stylesheet" href="vendors/css/normalize.css" />
     <link rel="stylesheet" href="vendors/css/grid.css" />
+    <link rel="stylesheet" href="vendors/css/meadiaQuery.css" />
     <link rel="stylesheet" href="Resources/css/style.css" />
     <link rel="preconnect" href="https://fonts.googleapis.com" />
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
@@ -19,26 +22,28 @@
     />
   </head>
   <body>
+    <!-- **************************************** header section ******************************************** -->
+
     <header>
       <nav>
         <div class="row">
           <img class="logo" src="Resources/img/logo-white.png" alt="logo img" />
           <ul class="main-nav">
-            <li><a href="#">food delivery</a></li>
-            <li><a href="#">how it works</a></li>
-            <li><a href="#">our cities</a></li>
-            <li><a href="#">sign up</a></li>
+            <li><a href="#features">food delivery</a></li>
+            <li><a href="#working">how it works</a></li>
+            <li><a href="#city">our cities</a></li>
+            <li><a href="#signup">sign up</a></li>
           </ul>
         </div>
       </nav>
 
       <div class="hero-text-box">
         <h1>hello super healthy food<br />good bye junk food</h1>
-        <a href="#" class="btn btn-full">i am hungry</a>
-        <a href="#" class="btn btn-ghost">show me more</a>
+        <a href="#plans" class="btn btn-full">i am hungry</a>
+        <a href="#features" class="btn btn-ghost">show me more</a>
       </div>
     </header>
-    <section class="section-feature">
+    <section class="section-feature" id="features">
       <div class="row">
         <h2>Get food fast &mdash; Not fast food</h2>
         <p class="long-copy">
@@ -91,7 +96,9 @@
       </div>
     </section>
 
-    <section class="meals-section">
+    <!-- ****************************************meals section ******************************************** -->
+
+    <section class="meals-section" data-aos="fade-in" data-aos-duration="2000">
       <ul class="meals-showoff">
         <li>
           <figure class="meal-photo">
@@ -138,14 +145,14 @@
 
     <!-- **************************************** how it work section ******************************************** -->
 
-    <section class="" steps>
+    <section class="steps" id="working" data-aos="fade-in" data-aos-duration="2000">
       <div class="row">
         <h2>how it works &mdash; simple as 1,2,3</h2>
       </div>
 
       <div class="row">
         <div class="col span-1-of-2 step-box">
-          <img
+          <img data-aos="slide-left" data-aos-duration="1000"
             src="Resources/img/app-iPhone.png"
             alt="phone img"
             class="app-screen"
@@ -184,7 +191,7 @@
     </section>
 
     <!-- **************************************** city section ******************************************** -->
-    <section class="cities">
+    <section class="cities" id="city" data-aos="fade-in" data-aos-duration="2000">
       <div class="row">
         <h2>we are currently in these cities</h2>
       </div>
@@ -256,7 +263,7 @@
       </div>
     </section>
     <!-- **************************************** testimonial section ******************************************** -->
-    <section class="testimonial">
+    <section class="testimonial" data-aos="fade-in" data-aos-duration="2000">
       <div class="row">
         <h2>Our customer can't live without us</h2>
       </div>
@@ -292,14 +299,14 @@
       </div>
     </section>
     <!-- **************************************** signup section ******************************************** -->
-    <section class="plans">
+    <section class="plans" id="plans" data-aos="fade-in" data-aos-duration="2000">
       <div class="row">
         <h2>Start eating healthy today</h2>
       </div>
       <div class="row">
         <div class="col span-1-of-3">
           <div class="plan-box">
-            <div>
+            <div data-aos="zoom-in" data-aos-duration="2000">
               <h3>Premium</h3>
               <p class="plan-price">$399 <span>/ meal</span></p>
               <p class="plan-price-meal">That's only 13.905$ per meal</p>
@@ -393,7 +400,7 @@
       </div>
     </section>
     <!-- **************************************** contact form section ******************************************** -->
-    <section class="form">
+    <section class="form" id="signup" data-aos="fade-in" data-aos-duration="2000">
       <div class="row">
         <h2>We are happy to hear from you</h2>
       </div>
@@ -496,5 +503,10 @@
       </div>
     </footer>
     <script src="https://unpkg.com/ionicons@4.5.10-0/dist/ionicons.js"></script>
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.6.0/jquery.min.js"></script>
+      <script src="https://unpkg.com/aos@next/dist/aos.js"></script>
+  <script>
+    AOS.init();
+  </script>
   </body>
 </html>
