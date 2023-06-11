@@ -41,9 +41,10 @@ header {
 }
 .hero-text-box {
   position: absolute;
-  width: 1140px;
+  /* width: 1140px; */
   top: 50%;
-  left: 10%;
+  text-align: center;
+  /* left: 10%; */
   /* transform: translate(-50%, -50%); */
 }
 .btn:link,
@@ -62,12 +63,14 @@ input[type="submit"] {
   background-color: #e67e22;
   color: #fff;
   border: 1px solid #e67e22;
-  margin-right: 25px;
+  /* margin-right: 25px; */
 }
 .btn-ghost:link,
 .btn-ghost:visited {
   border: 1px solid #e67e22;
   color: #e67e22;
+  /* font-weight: bold; */
+  background-color: rgba(0, 0, 0, 0.6);
 }
 .btn:hover,
 .btn:active,
@@ -310,7 +313,7 @@ blockquote:before {
 .plan-box {
   background-color: #fff;
   border-radius: 5px;
-  width: 90%;
+  /* width: 90%; */
   margin-left: 5%;
 }
 .plan-box div {
@@ -322,6 +325,7 @@ blockquote:before {
   margin-bottom: 10px;
   font-weight: 100;
   color: #e67e22;
+  height: max-content;
 }
 .plan-price-meal {
   font-size: 80%;
