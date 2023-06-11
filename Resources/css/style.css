@@ -43,8 +43,7 @@ header {
   position: absolute;
   /* width: 1140px; */
   top: 50%;
-  text-align: center;
-  /* left: 10%; */
+  left: 10%;
   /* transform: translate(-50%, -50%); */
 }
 .btn:link,
@@ -84,6 +83,12 @@ input[type="submit"] {
   width: auto;
   float: left;
   color: white;
+}
+#navbarSupportedContent {
+  position: absolute;
+  /* border: 1px solid black; */
+  right: 50px;
+  /* padding: 50px; */
 }
 .main-nav {
   float: right;
