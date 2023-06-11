@@ -80,12 +80,10 @@ input[type="submit"] {
   height: 100px;
   width: auto;
   float: left;
-  margin-top: 20px;
   color: white;
 }
 .main-nav {
   float: right;
-  margin-top: 55px;
   list-style: none;
 }
 .main-nav li {
